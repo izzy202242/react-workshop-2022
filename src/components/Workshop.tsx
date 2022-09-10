@@ -71,7 +71,33 @@ function Workshop() {
           onChange={(event) => setName(event.target.value)}
         />
 
-        {/* Insert your components here! */}
+        <TextField
+          required
+          label={"Calories"}
+          value={name}
+          onChange={(event) => setName(event.target.value)}
+        />
+        
+        <TextField
+          required
+          label={"Fat (g)"}
+          value={name}
+          onChange={(event) => setName(event.target.value)}
+        />
+        
+        <TextField
+          required
+          label={"Carbs (g)"}
+          value={name}
+          onChange={(event) => setName(event.target.value)}
+        />
+        
+        <TextField
+          required
+          label={"Protein (g)"}
+          value={name}
+          onChange={(event) => setName(event.target.value)}
+        />
 
       </div>
 
