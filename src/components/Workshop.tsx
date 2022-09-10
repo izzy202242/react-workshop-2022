@@ -52,6 +52,9 @@ function Workshop() {
   // Here is the state variable that is tied to our TextField component
   // Add more variables for the other TextFields here!
   const [name, setName] = useState("");
+  const [cal, setCal] = useState("");
+  const [carbs, setCarbs] = useState("");
+  const [protein, setProtein] = useState("");
 
   // Step 3: Complete the submit function here
   const onSubmit = () => {
@@ -74,29 +77,29 @@ function Workshop() {
         <TextField
           required
           label={"Calories"}
-          value={name}
-          onChange={(event) => setName(event.target.value)}
+          value={cal}
+          onChange={(event) => setCal(event.target.value)}
         />
         
         <TextField
           required
           label={"Fat (g)"}
-          value={name}
-          onChange={(event) => setName(event.target.value)}
+          value={ffat}
+          onChange={(event) => setFat(event.target.value)}
         />
         
         <TextField
           required
           label={"Carbs (g)"}
-          value={name}
-          onChange={(event) => setName(event.target.value)}
+          value={carbs}
+          onChange={(event) => setCarbs(event.target.value)}
         />
         
         <TextField
           required
           label={"Protein (g)"}
-          value={name}
-          onChange={(event) => setName(event.target.value)}
+          value={protein}
+          onChange={(event) => setProtein(event.target.value)}
         />
 
       </div>
